@@ -6,8 +6,8 @@ def task() -> str:
         "Turquoise",
         "Cyan"
     ]
-    ta = min(list_words, key=len)
-    return ta  # используй ключевую у функции min, по которой она долна определять минимальный элемент
+    tada = min(list_words, key=len)
+    return tada  # используй ключевую у функции min, по которой она долна определять минимальный элемент
 
 
 if __name__ == "__main__":
