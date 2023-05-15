@@ -6,9 +6,10 @@ def task() -> int:
         "Turquoise",
         "Cyan"
     ]
-
-    return ...  # TODO найти длину самого длинного слова
+    mml = max(map(len, list_words))
+    return mml # TODO найти длину самого длинного слова
 
 
 if __name__ == "__main__":
     print(task())
+
