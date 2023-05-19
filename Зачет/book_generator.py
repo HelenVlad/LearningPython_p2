@@ -1,6 +1,6 @@
 from faker import Faker
 from random import randint, uniform
-import itertools
+from itertools import islice
 import json
 from conf import MODEL
 
@@ -30,7 +30,7 @@ def title() -> str:
     filename = "book.txt"
     line_num = randint(1, 10)
     with open(filename) as file:
-        lines = itertools.islice(file, line_num - 1, line_num)
+        lines = islice(file, line_num - 1, line_num)
         line = next(lines)
     return line.replace('\n', '')
 
